@@ -1,4 +1,5 @@
-const inquirer = require("inquirer");
+var generateMarkdown = require("./utils/generateMarkdown.js");
+const inquirer = require("inquirer"); 
 const fs = require("fs");
 const util = require("util");
 const writeFileAsync = util.promisify(fs.writeFile);
@@ -6,59 +7,68 @@ const writeFileAsync = util.promisify(fs.writeFile);
 const questions = [
 
 ];
-function promptUser(){
-
-        return inquirer.prompt([
+// function to initialize program
+function init() {
+  
+        inquirer.prompt([
           {
             type: "input",
             name: "title",
-            message: "What is the title of the project?"
+            message: "What is the title of the project?",
+            validate: answerValidation
           },
           {
             type: "input",
             message: "Enter the description of the project",
-            name: "description"
+            name: "description",
+            validate: answerValidation
           },
           {
             type: "input",
             message: "Enter the installation instructions",
-            name: "installation"
+            name: "installation",
+            validate: answerValidation
           },
           {
             type: "input",
             message: "Enter the usage information",
-            name: "usage info"
+            name: "usageInfo",
+            validate: answerValidation
           },
           {
             type: "input",
             message: "Enter contribution guidelines",
-            name: "contribution guidelines"
+            name: "contribution",
+            validate: answerValidation
           },
           {
             type: "input",
             message: "Enter test information",
-            name: "test info"
+            name: "testInfo",
+            validate: answerValidation
           },
           {
             type: "list",
             message: "Select a license type",
             choices: ['GNU AGPLv3', 'GNU GPLv3', 'GNU LGPLv3', 'Mozilla Public License 2.0', 'Apache License 2.0', 'MIT License', 'Boost Software License 1.0', 'The Unlicense'],
-            name: "license type"
+            name: "licenseType",
+            validate: answerValidation
           },
           {
             type: "input",
             message: "Enter Github username",
-            name: "username"
+            name: "username",
+            validate: answerValidation
           },
           {
             type: "input",
             message: "Enter Email Address",
-            name: "emailAddress"
+            name: "emailAddress",
+            validate: answerValidation
           },
-        ]);
-      }
-    promptUser()
-      .then(function(answers) {
+      
+        ])
+       .then(function(answers) {
         console.log(answers);
         const data = generateMarkdown(answers);
         writeToFile("README.md", data);
@@ -70,16 +80,20 @@ function promptUser(){
         console.log(err);
       });
     
+    }
 
+    function answerValidation(value){
+      if(value!=""){
+        return true;
+      }else{
+        return `Please enter the detail`;
+      }
+
+    }
 
 // function to write README file
 function writeToFile(fileName, data) {
   return writeFileAsync(fileName, data);
-}
-
-// function to initialize program
-function init() {
-  promptUser();
 }
 
 // function call to initialize program
