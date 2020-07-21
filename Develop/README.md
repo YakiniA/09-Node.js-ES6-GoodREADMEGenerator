@@ -1,49 +1,47 @@
 
+## Title
+License
 
-  ## DEMO Proj
-  License
+This is a dynamically generated README file using Command line application
 
-  This is a dynamically generated README file using Command line application
+## Description
 
-  ## Description
+undefined
 
-  undefined
+## Table Of Contents
 
-  ## Table Of Contents
+* [Installation](## Installation)
+* [Usage](## Usage)
+* [Contribution](## Contribution)
+* [Tests](## Tests)
+* [License](## License)
+* [Questions](## General)
 
-  * [Installation](##-Installation)
-  * [Usage](##-Usage)
-  * [Contribution](##-Contribution)
-  * [Tests](##-Tests)
-  * [License](##-License)
-  * [Questions](##-General)
+## Installation
 
-  ## Installation
+Installation Insrtuctions
 
-  Installation Instructions
+## Usage
 
-  ## Usage
+usage Info
 
-   Usage Info
+## Contribution
 
-  ## Contribution
+Guidelines
 
-  Giuidelines
+## Tests
+Test info
 
-  ## Tests
-  TEst Indfo
+## License
 
-  ## License
+License used is Mozilla Public License 2.0
 
-  License used is GNU GPLv3
+For more details regarding Git License Types, please visit [License Types](https://choosealicense.com/licenses/)
 
-  For more details regarding Git License Types, please visit [License Types](https://choosealicense.com/licenses/)
+## General
 
-  ## General
+GitHub Username : hsbgcjhbdj
 
-  GitHub Username : nccj
+Link to my GitHub profile : [GitHub Profile](https://github.com/hsbgcjhbdj)
 
-  Link to my GitHub profile : [GitHub Profile](https://github.com/nccj)
-
-  Email : undefined
-  
+Email : undefined

@@ -1,54 +1,53 @@
 // function to generate markdown for README
 function generateMarkdown(data) {
-  return `
+return `
+## ${data.title}
+License
 
-  ## ${data.title}
-  License
+This is a dynamically generated README file using Command line application
 
-  This is a dynamically generated README file using Command line application
+## Description
 
-  ## Description
+${data.desccription}
 
-  ${data.desccription}
+## Table Of Contents
 
-  ## Table Of Contents
+* [Installation](## Installation)
+* [Usage](## Usage)
+* [Contribution](## Contribution)
+* [Tests](## Tests)
+* [License](## License)
+* [Questions](## General)
 
-  * [Installation](##-Installation)
-  * [Usage](##-Usage)
-  * [Contribution](##-Contribution)
-  * [Tests](##-Tests)
-  * [License](##-License)
-  * [Questions](##-General)
+## Installation
 
-  ## Installation
+${data.installation}
 
-  ${data.installation}
+## Usage
 
-  ## Usage
+${data.usageInfo}
 
-  ${data.usageInfo}
+## Contribution
 
-  ## Contribution
+${data.contribution}
 
-  ${data.contribution}
+## Tests
+${data.testInfo}
 
-  ## Tests
-  ${data.testInfo}
+## License
 
-  ## License
+License used is ${data.licenseType}
 
-  License used is ${data.licenseType}
+For more details regarding Git License Types, please visit [License Types](https://choosealicense.com/licenses/)
 
-  For more details regarding Git License Types, please visit [License Types](https://choosealicense.com/licenses/)
+## General
 
-  ## General
+GitHub Username : ${data.username}
 
-  GitHub Username : ${data.username}
+Link to my GitHub profile : [GitHub Profile](https://github.com/${data.username})
 
-  Link to my GitHub profile : [GitHub Profile](https://github.com/${data.username})
-
-  Email : ${data.email}
-  `;
+Email : ${data.email}
+`;
 }
 
 module.exports = generateMarkdown;
