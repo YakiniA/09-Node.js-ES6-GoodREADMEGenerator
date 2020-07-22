@@ -64,7 +64,8 @@ function init() {
             type: "input",
             message: "Enter Email Address",
             name: "emailAddress",
-            validate: answerValidation
+            validate: answerValidation,
+            validate: emailValidation
           },
       
         ])
@@ -83,12 +84,17 @@ function init() {
     }
 
     function answerValidation(value){
-      if(value!=""){
-        return true;
-      }else{
-        return `Please enter the detail`;
-      }
-
+      if(value!="") return true;
+      else return `Please enter the detail`;
+    }
+    
+    function emailValidation(value){
+      var mailformat = /^w+([.-]?w+)*@w+([.-]?w+)*(.w{2,3})+$/;
+      if(value.match(mailformat))
+       return true;
+     
+      else
+      return `Please enter valid email`;
     }
 
 // function to write README file

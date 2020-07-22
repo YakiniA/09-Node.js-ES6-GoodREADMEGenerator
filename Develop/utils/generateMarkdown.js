@@ -12,10 +12,10 @@ ${data.desccription}
 
 ## Table Of Contents
 
-* [Installation](## Installation)
-* [Usage](## Usage)
-* [Contribution](## Contribution)
-* [Tests](## Tests)
+* [Installation](##Installation)
+* [Usage](##Usage)
+* [Contribution](##Contribution)
+* [Tests](##Tests)
 * [License](## License)
 * [Questions](## General)
 
