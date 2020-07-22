@@ -89,7 +89,6 @@ function init() {
     }
     
     function emailValidation(value){
-      // var mailformat = /^w+([.-]?w+)*@w+([.-]?w+)*(.w{2,3})+$/;
       var mailformat = /\S+@\S+\.\S+/;
       if(value.match(mailformat))
        return true;
