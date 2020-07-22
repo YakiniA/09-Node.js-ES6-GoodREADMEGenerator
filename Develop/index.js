@@ -53,7 +53,7 @@ function init() {
             choices: ['GNU AGPLv3', 'GNU GPLv3', 'GNU LGPLv3', 'BSD', 'Apache','Mozilla', 'MIT', 'Boost', 'Unlicense'],
             name: "licenseType",
             validate: answerValidation,
-            validate: licenseBadge
+            // validate: licenseBadge
           },
           {
             type: "input",
@@ -103,48 +103,48 @@ function init() {
       return `Please enter valid email`;
     }
 
-    function licenseBadge(value){
-        switch (value) {
-        case "GNU AGPLv3":
-         data.licenseType= `[![License: AGPL v3](https://img.shields.io/badge/License-AGPL%20v3-blue.svg)](https://www.gnu.org/licenses/agpl-3.0)`;
+    // function licenseBadge(value){
+    //     switch (value) {
+    //     case "GNU AGPLv3":
+    //      data.licenseType= `[![License: AGPL v3](https://img.shields.io/badge/License-AGPL%20v3-blue.svg)](https://www.gnu.org/licenses/agpl-3.0)`;
 
-        break;
+    //     break;
 
-        case "GNU GPLv3":
+    //     case "GNU GPLv3":
 
-        break;
+    //     break;
 
-        case "GNU LGPLv3":
+    //     case "GNU LGPLv3":
 
-        break;
+    //     break;
 
-        case "GNU BSD":
+    //     case "GNU BSD":
 
-        break;
+    //     break;
 
-        case "Apache":
+    //     case "Apache":
 
-        break;
-        case "Mozilla":
+    //     break;
+    //     case "Mozilla":
 
-        break;
+    //     break;
 
-        case "MIT":
+    //     case "MIT":
 
-        break;
-        case "Boost":
+    //     break;
+    //     case "Boost":
 
-        break;
-        case "Unlicense":
-         data.licenseType =  `[![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)](http://unlicense.org/)`;
+    //     break;
+    //     case "Unlicense":
+    //      data.licenseType =  `[![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)](http://unlicense.org/)`;
 
 
-        break;
+    //     break;
               
-        default:
-        break;
-        }
-        }
+    //     default:
+    //     break;
+    //     }
+    //     }
 
 // function to write README file
 function writeToFile(fileName, data) {
