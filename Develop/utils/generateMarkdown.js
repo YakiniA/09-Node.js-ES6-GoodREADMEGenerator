@@ -16,8 +16,8 @@ ${data.desccription}
 * [Usage](##Usage)
 * [Contribution](##Contribution)
 * [Tests](##Tests)
-* [License](## License)
-* [Questions](## General)
+* [License](##License)
+* [Questions](##General)
 
 ## Installation
 
