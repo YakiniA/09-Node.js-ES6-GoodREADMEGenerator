@@ -50,9 +50,10 @@ function init() {
           {
             type: "list",
             message: "Select a license type",
-            choices: ['GNU AGPLv3', 'GNU GPLv3', 'GNU LGPLv3', 'Mozilla Public License 2.0', 'Apache License 2.0', 'MIT License', 'Boost Software License 1.0', 'The Unlicense'],
+            choices: ['GNU AGPLv3', 'GNU GPLv3', 'GNU LGPLv3', 'BSD', 'Apache','Mozilla', 'MIT', 'Boost', 'Unlicense'],
             name: "licenseType",
-            validate: answerValidation
+            validate: answerValidation,
+            validate: licenseBadge
           },
           {
             type: "input",
@@ -69,18 +70,23 @@ function init() {
           },
       
         ])
-       .then(function(answers) {
+       .then((answers) => {
         console.log(answers);
+        answers.title = answers.title.trim();
+        answers.description = answers.description.trim();
+        answers.installation =  answers.installation.trim();
+        answers.usageInfo = answers.usageInfo.trim();
+        answers.contribution = answers.contribution.trim();
+        answers.testInfo = answers.testInfo.trim();
+        answers.username = answers.username.trim();
+        answers.emailAddress = answers.emailAddress.trim();
         const data = generateMarkdown(answers);
         writeToFile("README.md", data);
       })
-      .then(function() {
+      .then(() => {
         console.log("Successfully wrote to README.md file");
       })
-      .catch(function(err) {
-        console.log(err);
-      });
-    
+      .catch((err) => console.log(err));
     }
 
     function answerValidation(value){
@@ -96,6 +102,49 @@ function init() {
       else
       return `Please enter valid email`;
     }
+
+    function licenseBadge(value){
+        switch (value) {
+        case "GNU AGPLv3":
+         data.licenseType= `[![License: AGPL v3](https://img.shields.io/badge/License-AGPL%20v3-blue.svg)](https://www.gnu.org/licenses/agpl-3.0)`;
+
+        break;
+
+        case "GNU GPLv3":
+
+        break;
+
+        case "GNU LGPLv3":
+
+        break;
+
+        case "GNU BSD":
+
+        break;
+
+        case "Apache":
+
+        break;
+        case "Mozilla":
+
+        break;
+
+        case "MIT":
+
+        break;
+        case "Boost":
+
+        break;
+        case "Unlicense":
+         data.licenseType =  `[![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)](http://unlicense.org/)`;
+
+
+        break;
+              
+        default:
+        break;
+        }
+        }
 
 // function to write README file
 function writeToFile(fileName, data) {

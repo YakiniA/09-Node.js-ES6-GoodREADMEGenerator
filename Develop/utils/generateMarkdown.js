@@ -3,8 +3,7 @@ function generateMarkdown(data) {
 return `
 # ${data.title}
 
-[GitHub License](https://img.shields.io/badge/license-${encodeURI(data.licenseType)}-green.svg)
-
+${data.licenseType}
 This is a dynamically generated README file using Command line application
 
 # Description
