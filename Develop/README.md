@@ -1,13 +1,13 @@
 
-# ahcjbakjc
+# abkjcbn cbakjn
 
-(https://img.shields.io/badge/License-GNU%20AGPLv3-green.svg)
+[License : GNU LGPLv3](https://img.shields.io/badge/License-GNU%20LGPLv3-green.svg)
 
 This is a dynamically generated README file using Command line application
 
 # Description
 
-zjbckjsnn
+jsnckjn
 
 # Table Of Contents
 
@@ -20,29 +20,29 @@ zjbckjsnn
 
 # Installation
 
-ajcbdkjanckj
+kjnckjn
 
 # Usage
 
-ckjnkjdnnx
+skjdvkjn
 
 # Contribution
 
-acnkjndmc
+kjnvkjn
 
 # Tests
-akjcnan
+vnsklnmsklmv
 
 # License
 
-License used is GNU AGPLv3
+License used is GNU LGPLv3
 
 For more details regarding Git License Types, please visit [License Types](https://choosealicense.com/licenses/)
 
 # General
 
-GitHub Username : ahsckjn
+GitHub Username : jahkvcjnkln
 
-Link to my GitHub profile : [GitHub Profile](https://github.com/ahsckjn)
+Link to my GitHub profile : [GitHub Profile](https://github.com/jahkvcjnkln)
 
 Email : undefined
