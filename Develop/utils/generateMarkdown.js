@@ -1,46 +1,46 @@
 // function to generate markdown for README
 function generateMarkdown(data) {
 return `
-## ${data.title}
+# ${data.title}
 License
 
 This is a dynamically generated README file using Command line application
 
-## Description
+# Description
 
 ${data.desccription}
 
-## Table Of Contents
+# Table Of Contents
 
-* [Installation](##Installation)
-* [Usage](##Usage)
-* [Contribution](##Contribution)
-* [Tests](##Tests)
-* [License](##License)
-* [Questions](##General)
+* [Installation](#Installation)
+* [Usage](#Usage)
+* [Contribution](#Contribution)
+* [Tests](#Tests)
+* [License](#License)
+* [Questions](#General)
 
-## Installation
+# Installation
 
 ${data.installation}
 
-## Usage
+# Usage
 
 ${data.usageInfo}
 
-## Contribution
+# Contribution
 
 ${data.contribution}
 
-## Tests
+# Tests
 ${data.testInfo}
 
-## License
+# License
 
 License used is ${data.licenseType}
 
 For more details regarding Git License Types, please visit [License Types](https://choosealicense.com/licenses/)
 
-## General
+# General
 
 GitHub Username : ${data.username}
 
