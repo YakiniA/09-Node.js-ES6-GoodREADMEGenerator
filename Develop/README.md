@@ -1,13 +1,13 @@
 
-# shbckjanc
+# iuhsa
 
-![BSD](https://img.shields.io/badge/License-BSD-blue.svg)
+![GNU GPLv3](https://img.shields.io/badge/License-GNU%20GPLv3-blue.svg)
 
 This is a dynamically generated README file using Command line application
 
 # Description
 
-asjdklasklm
+duhviu
 
 # Table Of Contents
 
@@ -20,29 +20,31 @@ asjdklasklm
 
 # Installation
 
-asjaklnmcklm
+sdiusn
 
 # Usage
 
-sdhdfsnlk
+sdn
 
 # Contribution
 
-sfhksnfk
+snduvn
 
 # Tests
-sdfjklsm
+sddmvkdm
 
 # License
 
-License used is BSD
+License used is GNU GPLv3
 
-For more details regarding Git License Types, please visit [License Types](https://choosealicense.com/licenses/)
+For more details regarding GitHub License Types, please visit [License Types](https://choosealicense.com/licenses/)
 
 # General
 
-GitHub Username : sakfjnkln
+GitHub Username : YakiniA
 
-Link to my GitHub profile : [GitHub Profile](https://github.com/sakfjnkln)
+Link to my GitHub profile : [GitHub Profile](https://github.com/YakiniA)
 
 Email : undefined
+
+If you have any questions/clarifications needed, reach out to me using GitHub/Email information provided.
