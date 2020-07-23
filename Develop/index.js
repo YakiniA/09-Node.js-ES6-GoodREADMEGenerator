@@ -1,5 +1,6 @@
 var generateMarkdown = require("./utils/generateMarkdown.js");
 const inquirer = require("inquirer"); 
+const axios = require("axios");
 const fs = require("fs");
 const util = require("util");
 const writeFileAsync = util.promisify(fs.writeFile);
@@ -53,13 +54,14 @@ function init() {
             choices: ['GNU AGPLv3', 'GNU GPLv3', 'GNU LGPLv3', 'BSD', 'Apache','Mozilla', 'MIT', 'Boost', 'Unlicense'],
             name: "licenseType",
             validate: answerValidation,
-            // validate: licenseBadge
+            
           },
           {
             type: "input",
             message: "Enter Github username",
             name: "username",
-            validate: answerValidation
+            validate: answerValidation,
+            validate: gitHubValidation
           },
           {
             type: "input",
@@ -95,6 +97,7 @@ function init() {
     }
     
     function emailValidation(value){
+
       var mailformat = /\S+@\S+\.\S+/;
       if(value.match(mailformat))
        return true;
@@ -103,48 +106,22 @@ function init() {
       return `Please enter valid email`;
     }
 
-    // function licenseBadge(value){
-    //     switch (value) {
-    //     case "GNU AGPLv3":
-    //      data.licenseType= `[![License: AGPL v3](https://img.shields.io/badge/License-AGPL%20v3-blue.svg)](https://www.gnu.org/licenses/agpl-3.0)`;
+   async function gitHubValidation(value){
+ 
+      const queryUrl = `https://api.github.com/users/${value}`;
+      try{
+       const response = await axios.get(queryUrl);
+        if(response.status === 200){
+          return true;
+        }
+      }catch (error) {console.log(`Invalid User`)};
+         
 
-    //     break;
-
-    //     case "GNU GPLv3":
-
-    //     break;
-
-    //     case "GNU LGPLv3":
-
-    //     break;
-
-    //     case "GNU BSD":
-
-    //     break;
-
-    //     case "Apache":
-
-    //     break;
-    //     case "Mozilla":
-
-    //     break;
-
-    //     case "MIT":
-
-    //     break;
-    //     case "Boost":
-
-    //     break;
-    //     case "Unlicense":
-    //      data.licenseType =  `[![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)](http://unlicense.org/)`;
-
-
-    //     break;
-              
-    //     default:
-    //     break;
-    //     }
-    //     }
+        // }).catch(err => {
+       
+        //   return `Invalid User`;
+        // });
+      }
 
 // function to write README file
 function writeToFile(fileName, data) {

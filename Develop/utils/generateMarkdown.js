@@ -39,7 +39,7 @@ ${data.testInfo}
 
 License used is ${data.licenseType}
 
-For more details regarding Git License Types, please visit [License Types](https://choosealicense.com/licenses/)
+For more details regarding GitHub License Types, please visit [License Types](https://choosealicense.com/licenses/)
 
 # General
 
@@ -48,6 +48,8 @@ GitHub Username : ${data.username}
 Link to my GitHub profile : [GitHub Profile](https://github.com/${data.username})
 
 Email : ${data.email}
+
+If you have any questions/clarifications needed, reach out to me using GitHub/Email information provided.
 `;
 }
 
