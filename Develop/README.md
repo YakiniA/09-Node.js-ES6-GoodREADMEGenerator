@@ -47,4 +47,4 @@ Link to my GitHub profile : [GitHub Profile](https://github.com/YakiniA)
 
 Email : undefined
 
-If you have any questions/clarifications needed, reach out to me using GitHub/Email information provided.
+If you have any questions/clarifications needed, please reach out to me using GitHub/Email information provided.
