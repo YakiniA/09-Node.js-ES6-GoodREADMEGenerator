@@ -47,7 +47,7 @@ GitHub Username : ${data.username}
 
 Link to my GitHub profile : [GitHub Profile](https://github.com/${data.username})
 
-Email : ${data.email}
+Email : ${data.emailAddress}
 
 If you have any questions/clarifications needed, reach out to me using GitHub/Email information provided.
 `;
