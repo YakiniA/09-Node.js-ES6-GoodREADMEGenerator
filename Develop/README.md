@@ -1,13 +1,13 @@
 
-# iuhsa
+# Dynamically Generated README
 
-![GNU GPLv3](https://img.shields.io/badge/License-GNU%20GPLv3-blue.svg)
+![Apache](https://img.shields.io/badge/License-Apache-blue.svg)
 
 This is a dynamically generated README file using Command line application
 
 # Description
 
-duhviu
+The purpose of this project is to develop a dynamically generated README file by answering the set of questions prompted within the command line. This application uses Node.js and ES6+ and the Inquirer package.
 
 # Table Of Contents
 
@@ -20,22 +20,22 @@ duhviu
 
 # Installation
 
-sdiusn
+To install NPM module dependencies, run the command: NPM install
 
 # Usage
 
-sdn
+For further details on how to use this application, refer the README file within the GitHub repository.
 
 # Contribution
 
-snduvn
+Please, feel free to fork the repository or use a separate branch to make any changes to the code. Once done, submit your changes via a pull request.
 
 # Tests
-sddmvkdm
+This section is to include an specific testing scenarios that the user can use to test an app.
 
 # License
 
-License used is GNU GPLv3
+License used is Apache
 
 For more details regarding GitHub License Types, please visit [License Types](https://choosealicense.com/licenses/)
 
@@ -47,4 +47,4 @@ Link to my GitHub profile : [GitHub Profile](https://github.com/YakiniA)
 
 Email : undefined
 
-If you have any questions/clarifications needed, please reach out to me using GitHub/Email information provided.
+If you have any questions/clarifications needed, reach out to me using GitHub/Email information provided.
