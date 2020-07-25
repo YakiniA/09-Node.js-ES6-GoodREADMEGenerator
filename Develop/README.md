@@ -1,7 +1,7 @@
 
 # Dynamically Generated README
 
-![Apache](https://img.shields.io/badge/License-Apache-blue.svg)
+![MIT](https://img.shields.io/badge/License-MIT-blue.svg)
 
 This is a dynamically generated README file using Command line application
 
@@ -35,7 +35,7 @@ This section includes testing scenarios that the user can use to test an app.
 
 # License
 
-License used is Apache
+License used is MIT
 
 For more details regarding GitHub License Types, please visit [License Types](https://choosealicense.com/licenses/)
 

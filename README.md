@@ -34,9 +34,10 @@ then a badge for that license is added to the top of the README and the detail i
 * When the email id is entered, it is added to the section of the README and the details on  how to reach me with additional questions also shown.
 * If wrong email id is provided, then the message "Please enter valid email" message is shown.
 * On Clicking the links in the Table of Contents, then the corresponding section of the README is shown.
+
 ### Preview
 
-![Video](https://drive.google.com/file/d/1xzHDVsS8prLmINYgwVcFRwsq7rh32Q39/view?usp=sharing)
+![Screenshot](Develop/screenshot.jpg)
 
 ### Submission Links
 
