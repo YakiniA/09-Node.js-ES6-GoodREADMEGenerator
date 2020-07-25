@@ -50,8 +50,7 @@ function init() {
             message: "Select a license type",
             choices: ['GNU AGPLv3', 'GNU GPLv3', 'GNU LGPLv3', 'BSD', 'Apache','Mozilla', 'MIT', 'Boost', 'Unlicense'],
             name: "licenseType",
-            validate: answerValidation
-            
+                      
           },
           {
             type: "input",

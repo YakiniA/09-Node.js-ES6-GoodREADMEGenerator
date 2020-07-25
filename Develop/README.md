@@ -1,7 +1,7 @@
 
 # Dynamically Generated README
 
-![MIT](https://img.shields.io/badge/License-MIT-blue.svg)
+![Apache](https://img.shields.io/badge/License-Apache-blue.svg)
 
 This is a dynamically generated README file using Command line application
 
@@ -31,11 +31,11 @@ For further details on how to use this application, refer the README file within
 Please, feel free to fork the repository or use a separate branch to make any changes to the code. Once done, submit your changes via a pull request.
 
 # Tests
-This section is to include an specific testing scenarios that the user can use to test an app.
+This section includes testing scenarios that the user can use to test an app.
 
 # License
 
-License used is MIT
+License used is Apache
 
 For more details regarding GitHub License Types, please visit [License Types](https://choosealicense.com/licenses/)
 
@@ -45,6 +45,6 @@ GitHub Username : YakiniA
 
 Link to my GitHub profile : [GitHub Profile](https://github.com/YakiniA)
 
-Email : nkcnkxnkn@jashcjkhskjc.com
+Email : yakinilatha09@gmail.com
 
 If you have any questions/clarifications needed, reach out to me using GitHub/Email information provided.

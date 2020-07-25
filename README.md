@@ -31,6 +31,8 @@ then a badge for that license is added to the top of the README and the detail i
 
 Dynamically Generated README file: [README File](Develop/README.md)
 
+[Watch the video](Develop/RecordedVideo.webm)
+
 ##### References
 
 StackOverflow : [StackOverflow - Inquirer validation](https://stackoverflow.com/questions/57321266/how-to-test-inquirer-validation)<br/>
