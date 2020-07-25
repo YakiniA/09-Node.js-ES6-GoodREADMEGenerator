@@ -37,9 +37,9 @@ then a badge for that license is added to the top of the README and the detail i
 
 ### Preview
 
-![Screenshot](Develop/screenshot.jpg)
-
 ![RecordedVideo](Develop/FirstRecord.gif)
+
+![Screenshot](Develop/screenshot.jpg)
 
 ### Submission Links
 
