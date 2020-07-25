@@ -39,6 +39,8 @@ then a badge for that license is added to the top of the README and the detail i
 
 ![Screenshot](Develop/screenshot.jpg)
 
+![RecordedVideo](Develop/FirstRecord.gif)
+
 ### Submission Links
 
 Link To the GitHub Repo : https://github.com/YakiniA/09-Node.js-ES6-GoodREADMEGenerator
