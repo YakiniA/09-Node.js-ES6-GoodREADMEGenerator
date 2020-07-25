@@ -1,7 +1,7 @@
 
 # Dynamically Generated README
 
-![Apache](https://img.shields.io/badge/License-Apache-blue.svg)
+![MIT](https://img.shields.io/badge/License-MIT-blue.svg)
 
 This is a dynamically generated README file using Command line application
 
@@ -35,7 +35,7 @@ This section is to include an specific testing scenarios that the user can use t
 
 # License
 
-License used is Apache
+License used is MIT
 
 For more details regarding GitHub License Types, please visit [License Types](https://choosealicense.com/licenses/)
 
@@ -45,6 +45,6 @@ GitHub Username : YakiniA
 
 Link to my GitHub profile : [GitHub Profile](https://github.com/YakiniA)
 
-Email : undefined
+Email : nkcnkxnkn@jashcjkhskjc.com
 
 If you have any questions/clarifications needed, reach out to me using GitHub/Email information provided.

@@ -50,14 +50,13 @@ function init() {
             message: "Select a license type",
             choices: ['GNU AGPLv3', 'GNU GPLv3', 'GNU LGPLv3', 'BSD', 'Apache','Mozilla', 'MIT', 'Boost', 'Unlicense'],
             name: "licenseType",
-            validate: answerValidation,
+            validate: answerValidation
             
           },
           {
             type: "input",
             message: "Enter Github username",
             name: "username",
-            // validate: answerValidation,
             validate: gitHubValidation
           },
           {
@@ -87,11 +86,13 @@ function init() {
       .catch((err) => console.log(err));
     }
 
+    // To validate whether questions are answered. If not, return 'Please enter the detail' message
     function answerValidation(value){
       if(value!="") return true;
       else return `Please enter the detail`;
     }
     
+    //To validate whether the email entered is correct. If not, return 'Please enter valid email' message
     function emailValidation(value){
 
       var mailformat = /\S+@\S+\.\S+/;
@@ -102,6 +103,7 @@ function init() {
       return `Please enter valid email`;
     }
 
+    //To validate the GitHub account. If not valid, return 'Invalid user message'
    async function gitHubValidation(value){
  
       const queryUrl = `https://api.github.com/users/${value}`;
@@ -114,7 +116,6 @@ function init() {
         return `Invalid User`;
         
       };
-
       }
 
 // function to write README file
