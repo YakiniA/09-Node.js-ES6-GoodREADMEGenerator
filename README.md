@@ -4,7 +4,7 @@ This project mainly focuses on dynamically generate a high quality README file u
 
 ### Prerequisite
 
-In order to execute the generate-readme application, the user must first install node.js in the local environment.
+To execute the generate readme application, the user must first install node.js.
 
 Steps to Install NodeJS: [Node.js Installation](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm#windows-node-version-managers)
 
